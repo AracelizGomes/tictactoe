@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cosmic-particle"></div>
+    <div class="cosmic-particle"></div>
+    <div class="cosmic-particle"></div>
+    <div class="cosmic-particle"></div>
+    <div class="cosmic-particle"></div>
+    <div class="cosmic-particle"></div>
+    <div class="cosmic-particle"></div>
+    <div class="cosmic-particle"></div>
+    <div class="cosmic-particle"></div>
+    
+    <div id="app">
+        <header>
+            <h1>Tic Tac Toe</h1>
+            <p>Play the classic game in your browser</p>
+        </header>
+        
+        <main>
+            <section class="game-section">
+                <div class="game-controls">
+                    <div class="mode-toggle">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="mode-toggle" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span class="mode-label" id="mode-label">Computer Always Wins Mode</span>
+                    </div>
+                </div>
+                <div class="game-status">
+                    <span id="game-status">Your Turn (X)</span>
+                </div>
+                <div class="game-board" id="game-board">
+                    <!-- The game board will be dynamically populated with cells (3x3) -->
+                </div>
+                <button id="reset-game" class="reset-btn">Reset Game</button>
+            </section>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
