@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5001:5001"
+    environment:
+      - SPRING_PROFILES_ACTIVE=development
+    volumes:
+      - .:/app
+    restart: unless-stopped
